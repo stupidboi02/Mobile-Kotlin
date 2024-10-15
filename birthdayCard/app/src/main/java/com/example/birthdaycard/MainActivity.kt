@@ -74,6 +74,7 @@ fun GreetingText() {
             Text(
                 text = "From Emma.",
                 fontSize = 18.sp,
+                fontWeight = FontWeight.Bold
             )
         }
     }
