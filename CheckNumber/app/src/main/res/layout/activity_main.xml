@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText for entering a number -->
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nhập Số"
+        android:inputType="number" />
+
+    <!-- RadioGroup containing three RadioButtons for options -->
+    <RadioGroup
+        android:id="@+id/radioOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chẵn" />
+
+        <RadioButton
+            android:id="@+id/radio_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lẻ" />
+
+        <RadioButton
+            android:id="@+id/radio_cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chính Phương" />
+    </RadioGroup>
+
+    <!-- Button to trigger showing results -->
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView for showing result message -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả:"
+        android:padding="8dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- ListView to display the results -->
+    <ListView
+        android:id="@+id/listViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+</LinearLayout>
